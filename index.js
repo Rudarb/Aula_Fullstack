@@ -159,3 +159,7 @@ api.put( "/product/:idProd" , (req, res, next) => {
 api.listen( PORT , ()=>{
     console.log( `Servidor rodando em: http://${HOSTNAME}:${PORT}`)
 })
+// post {
+// "nome": "chá mate",
+// "preco": 9.50,
+//"codCategoria": 1}
