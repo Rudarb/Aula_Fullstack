@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container mt-4">
+      <a href="categoria.html" class="btn btn-secondary mb-3">&larr; Voltar para Categorias</a>
+      <h1>Produtos <small id="tituloCategoria" class="text-muted"></small></h1>
+ 
+      <form id="formproduto" class="mb-4">
+        <input type="hidden" id="idprod">
+        <div class="input-group flex-nowrap mb-2">
+          <span class="input-group-text">Nome</span>
+          <input type="text" id="txtNome" class="form-control" placeholder="Nome do produto">
+        </div>
+        <div class="input-group flex-nowrap mb-2">
+          <span class="input-group-text">Preço</span>
+          <input type="number" step="0.01" id="txtPreco" class="form-control" placeholder="Preço do produto">
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+      </form>
+ 
+      <table class="table table-striped table-hover" id="tbldados">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="ListaProdutos">
+ 
+        </tbody>
+      </table>
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
